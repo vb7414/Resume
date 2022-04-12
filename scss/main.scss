@@ -35,8 +35,7 @@
         margin-right: 10px;
         padding: 25px 35px 25px 35px;
         width: 284px;
-        height: 276px;
-        h2 {
+        p {
             font-size: 18px;
             line-height: 24px;
             color: #4a4a4a;
@@ -130,18 +129,18 @@
                 letter-spacing: 0.53px;
                 color: #4a4a4a;
                 padding-left: 10px;
+                padding-right: 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 &.reverse {
                     text-align: right;
-                    padding-right: 10px;
                 }
-                h3 {
+                .main__experience--job {
                     color: #8a1737;
                     font-weight: bold;
                 }
-                p {
+                .main__experience--describe {
                     font-size: 10px;
                     color: #9b9b9b;
                     letter-spacing: 0.44px;
@@ -161,7 +160,7 @@
     }
     @include pad() {
         .trunk .node .content {
-            width: 150px;
+            width: 40vw;
         }
     }
 
@@ -178,10 +177,12 @@
                         margin-right: 13px;
                     }
                 }
-                .content.reverse {
-                    flex-shrink: 0;
-                    text-align: left;
-                    padding-right: 0px;
+                .content {
+                    width: 70vw;
+                    &.reverse {
+                        flex-shrink: 0;
+                        text-align: left;
+                    }
                 }
             }
         }
@@ -214,16 +215,11 @@
         margin-right: 10px;
         font-size: 14px;
         line-height: 19px;
-        h2 {
-            font-weight: bold;
-            color: #000000;
-            margin: 10px 0px 7px 8px;
-        }
         p {
             color: #4a4a4a;
             margin-left: 8px;
         }
-        .w1 {
+        .work1 {
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
@@ -234,7 +230,7 @@
                 max-height: 114px;
             }
         }
-        .w2-3 {
+        .work2-3 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -250,16 +246,21 @@
                 background: #8ad7fa;
             }
         }
+        .main__works--name {
+            font-weight: bold;
+            color: #000000;
+            margin: 10px 0px 7px 8px;
+        }
 
         @include pad() {
             flex-direction: column;
             align-items: center;
             margin-bottom: 30px;
 
-            .w1 {
+            .work1 {
                 width: 100%;
             }
-            .w2-3 {
+            .work2-3 {
                 width: 100%;
             }
         }
@@ -269,10 +270,10 @@
             align-items: center;
             margin-bottom: 30px;
 
-            .w1 {
+            .work1 {
                 width: 100%;
             }
-            .w2-3 {
+            .work2-3 {
                 width: 100%;
             }
         }
